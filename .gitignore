@@ -1,0 +1,7 @@
+### GoLand ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.ini
+/out/
