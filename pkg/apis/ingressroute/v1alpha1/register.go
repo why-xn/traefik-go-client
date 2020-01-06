@@ -8,7 +8,7 @@ import (
 
 // Define your schema name and the version
 var SchemeGroupVersion = schema.GroupVersion{
-	Group:   "ingressroute",
+	Group:   "traefik.containous",
 	Version: "v1alpha1",
 }
 
