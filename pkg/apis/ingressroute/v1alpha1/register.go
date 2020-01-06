@@ -35,6 +35,7 @@ func addKnownTypes(scheme *runtime.Scheme) error {
 	scheme.AddKnownTypes(
 		SchemeGroupVersion,
 		&IngressRoute{},
+		&IngressRouteList{},
 	)
 
 	scheme.AddKnownTypes(

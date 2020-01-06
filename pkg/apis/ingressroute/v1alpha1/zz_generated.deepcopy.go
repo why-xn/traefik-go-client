@@ -22,3 +22,24 @@ func (in *IngressRoute) DeepCopyObject() runtime.Object {
 	}
 	return nil
 }
+
+func (in *IngressRouteList) DeepCopyInto(out *IngressRouteList) {
+	*out = *in
+	return
+}
+
+func (in *IngressRouteList) DeepCopy() *IngressRouteList {
+	if in == nil {
+		return nil
+	}
+	out := new(IngressRouteList)
+	in.DeepCopyInto(out)
+	return out
+}
+
+func (in *IngressRouteList) DeepCopyObject() runtime.Object {
+	if c := in.DeepCopy(); c != nil {
+		return c
+	}
+	return nil
+}
