@@ -51,3 +51,14 @@ type RouteServiceResponseForwarding struct {
 type IngressRouteSpecTls struct {
 	CertResolver string `json:"certResolver"`
 }
+
+// +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
+
+// no client needed for list as it's been created in above
+type IngressRouteList struct {
+	metav1.TypeMeta `json:",inline"`
+	// +optional
+	metav1.ListMeta `son:"metadata,omitempty"`
+
+	Items []IngressRoute `json:"items"`
+}
