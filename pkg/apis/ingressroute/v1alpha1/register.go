@@ -8,7 +8,7 @@ import (
 
 // Define your schema name and the version
 var SchemeGroupVersion = schema.GroupVersion{
-	Group:   "traefik.containous",
+	Group:   "traefik.containo.us",
 	Version: "v1alpha1",
 }
 
